@@ -1,0 +1,77 @@
+Business Courses:
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        body {
+            margin:0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: white;
+            min-height: 100vh;
+        }
+
+        .display { 
+            grid-area: display; 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px; 
+        }
+
+        .course-card {
+            padding: 0%;
+            text-align: center;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .course-card:hover { 
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.2); 
+        }
+
+        .course-card img { 
+            width: 100%; 
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.5s ease;
+            display: block;
+        }
+
+        .course-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .price{
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            gap: 10px;
+        }
+        
+        .course-card{
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+        
+        s{
+            color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <section class="display">
+            <div class="course-card"><img src="rich dad poor dad.jpg"><p>Rich Dad Poor Dad</p><div class="price"><p>₹450</p><s><strong>₹550</strong></s></div><p><strong>Course time: </strong>2 Weeks</p><div><button>Add to cart</button></div></div>
+            <div class="course-card"><img src="The power.jpg"><p>The Power of Subconcious Mind</p><div class="price"><p>₹450</p><s><strong>₹550</strong></s></div><p><strong>Course time: </strong>2 Weeks</p><div><button>Add to cart</button></div></div>
+            <div class="course-card"><img src="One Indian Girl.jpg"><p>One Indian Girl</p><div class="price"><p>₹699</p><s><strong>₹899</strong></s></div><p><strong>Course time: </strong>3 Weeks</p><div><button>Add to cart</button></div></div>
+            <div class="course-card"><img src="400 days.jpg"><p>400 Days</p><div class="price"><p>₹499</p><s><strong>₹650</strong></s></div><p><strong>Course time: </strong>2 Weeks</p><div><button>Add to cart</button></div></div>
+        </section>
+    </body>
+</html>
