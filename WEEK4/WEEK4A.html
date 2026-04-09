@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html><style>
+tabl,td{
+border-collapse: collapse;
+}
+</style>
+<body style="background-color: whitesmoke; align: center"></body>
+<h1 style="text-align:center">Table registration form</h1>
+<form>
+<table border="1" cellpadding="10" cellspacing="0" bordercolor="black" align="center" style="background-color: yellowgreen">	
+<tr>	
+<td>Full Name:</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Email:</td>
+<td><input type="email"></td>
+</tr>
+<tr>
+<td><label for="ph number"></label> Number:</td>
+<td><input type="tel" name="ph number" id="ph number"></td>
+</tr>
+<tr>
+<td><label for="gen">Gender</label></td>
+<td><input type="radio" name="gen" id="gen">Male
+<input type="radio" name="gen" id="gen">Female</td>
+</tr>
+<tr>
+<td>Course:</td>
+<td><select>
+<option value="btech">B-Tech</option>
+<option value="mtech">M-Tech</option>
+<option value="Phd">PHD</option>
+<option value="pd">PD</option>
+</select></td>
+</tr>
+<tr>
+<td><label for="ho">Hobbies</label></td>
+<td><input type="checkbox" name="ho">Reading
+<input type="checkbox" name="ho"> Travelling
+<input type="checkbox" name="ho"> Writing</td> 
+</tr>
+<tr>
+<td><label for="date">Date of Birth</label></td>
+<td><input type="date" name="date" id="date"></td>
+</tr>
+<tr>
+<td><label for="up">Upload certificates</label></td>
+<td><input type="file" name="up" id="up"></td>
+</tr>
+<tr>
+<td>Address</td>
+<td><textarea rows="4" cols="30"></textarea></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="submit" value="Submit"></td>
+</table>
+</form>
+</body>
+</html>
