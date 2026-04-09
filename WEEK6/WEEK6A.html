@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNDEFINED STUDIOS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: white;
+            min-height: 100vh;
+        }
+
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .main {
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "sale sale"
+                "categories display"
+                "footer footer";
+            grid-template-columns: 300px 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .header, .sale, .categories, .footer {
+            background: rgba(255, 255, 255, 0.1); 
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+
+        .header { 
+            grid-area: header; 
+            text-align: center; }
+        
+        .sale { 
+            grid-area: sale; 
+            text-align: center; 
+            font-size: 14px; 
+            color: #adff2f;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .categories { 
+            grid-area: categories;
+        }
+
+        .categories h2 { 
+            border-bottom: 2px solid rgba(255,255,255,0.2); 
+            padding-bottom: 10px; 
+        }
+
+        .categories p { 
+            padding: 12px; 
+            margin: 5px 0;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .categories p:hover { 
+            background: rgba(255, 255, 255, 0.15); 
+        }
+
+        .categories p:hover{
+            transform: scale(1.05);
+            transition: transform 0.5s ease;
+        }
+
+        .footer {
+            grid-area: footer;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            color: #eee;
+        }
+
+        .footer-col { 
+            flex: 1; 
+            min-width: 200px; 
+            padding: 10px; 
+        }
+
+        .footer a { 
+            color: #00e5ff; 
+            text-decoration: none; 
+        }
+
+        .footer a:hover { 
+            text-decoration: underline; 
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 715px;
+            border: none;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0);
+        }
+
+        .display{
+            grid-area: display;
+            width: 100%;
+            height: 100%;
+        }
+
+        .categories a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .main {
+                grid-template-areas: 
+                    "header"
+                    "sale"
+                    "categories"
+                    "display"
+                    "footer";
+                grid-template-columns: 1fr;
+            }
+
+            .categories {
+                width: auto;
+            }
+
+            iframe {
+                min-height: 550px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <video autoplay loop muted playsinline class="background-video">
+        <source src="212404.mp4" type="video/mp4">
+    </video>
+
+    <div class="main">
+        <header class="header">
+            <h1>E Commonication</h1>
+        </header>
+
+        <div class="sale">
+            <strong>Learn communication</strong>
+        </div>
+
+        <div class="categories">
+            <h2>Categories</h2>
+            <a href="technical.html" target="content-frame"><p>Technical</p></a>
+            <a href="specialization.html" target="content-frame"><p>Specializations</p></a>
+            <a href="core.html" target="content-frame"><p>Core Courses</p></a>
+            <a href="nontech.html" target="content-frame"><p>Non-Technical</p></a>
+            <a href="business.html" target="content-frame"><p>Business Courses</p></a>
+        </div>
+
+        <section class="display">
+            <iframe name="content-frame" src="technical.html"></iframe>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-col">
+                <img src="" width="160" alt="Logo">
+                <p>Contact: support@edumongo.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Developer</h4>
+                <p>RUDRA TEJA JALASUTRAM<br>ID: CSE25114<br>Section: CSE-B</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="https://github.com/rudra25114/UID-LAB-AV.SC.U4CSE25114.git">GitHub</a><br>
+                <a href="https://www.instagram.com/rudratejajalasutram/?__pwa=1#">Instagram</a><br>
+                8143819211
+            </div>
+            <div class="footer-col">
+                <h4>Address</h4>
+                <p>Amrita University, Amaravati, 522240</p>
+                <p>&copy; 2026 UNDEFINED</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
